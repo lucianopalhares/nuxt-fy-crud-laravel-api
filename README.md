@@ -73,25 +73,27 @@ php artisan serve
 
 #### Configurando o Frontend:
 
-+ Abra um novo terminal de linha de comando e acesse a pasta front
+##### instale a aplicação do front
 
 ```
-yarn install
+docker-compose up -d
 ```
 
-##### Compiles and hot-reloads for development
+##### entre na aplicação do front
+
 ```
-yarn serve
+docker exec -it nuxt-fy-crud-laravel-api bash
 ```
 
-##### Compiles and minifies for production
+##### instale a dependencias
+
 ```
-yarn build
+npm install
 ```
 
-##### Lints and fixes files
+##### compile a aplicação
 ```
-yarn lint
+npm run build
 ```
 
 ##### Crie um arquivo .env a partir de .env.example
